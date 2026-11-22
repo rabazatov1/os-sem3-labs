@@ -35,3 +35,14 @@ make
 printf '/tmp/sums4.txt\n1 2 3\n-5 10\n' | ./build/parent
 cat /tmp/sums4.txt
 ```
+
+## ЛР5 — динамические библиотеки
+
+```sh
+cd lab_5
+make
+printf '1 0 1 0.25\n2 1 0.1\n' | ./build/program1
+printf '1 0 1 0.25\n0\n1 0 1 0.25\n' | ./build/program2
+```
+
+Команда `0` переключает реализации только во второй программе. Формат входных команд и результаты проверки описаны в `lab_5/README.md` и `lab_5/report/README.md`.
